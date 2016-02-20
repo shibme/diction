@@ -2,7 +2,7 @@ package me.shib.java.lib.diction;
 
 import java.util.ArrayList;
 
-public class DictionWord {
+public final class DictionWord {
 
     private String word;
     private ArrayList<DictionDesc> descriptions;

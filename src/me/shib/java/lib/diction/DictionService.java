@@ -5,7 +5,7 @@ import rita.wordnet.RiWordnet;
 import java.util.ArrayList;
 
 
-public class DictionService {
+public final class DictionService {
 
     private RiWordnet wordnet;
 
