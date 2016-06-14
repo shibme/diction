@@ -5,7 +5,7 @@
 
     <groupId>me.shib.java.lib</groupId>
     <artifactId>diction</artifactId>
-    <version>0.1</version>
+    <version>0.1.0</version>
     <name>Diction</name>
     <description>A java dictionary service based on RiTa WordNet library</description>
     <url>https://github.com/shibme/diction</url>
