@@ -1,8 +1,11 @@
+sudo: false
 language: java
-install: mvn install -DskipTests=true -Dgpg.skip=true
-jdk:
-  - oraclejdk7
-  
+
+deploy:
+  provider: script
+  script: "cp .travis.settings.xml $HOME/.m2/settings.xml && mvn clean deploy"
+  skip_cleanup: true
+
 notifications:
   email:
     on_success: never

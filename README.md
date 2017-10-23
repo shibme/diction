@@ -4,7 +4,7 @@
 [![Download](https://api.bintray.com/packages/shibme/maven/diction/images/download.svg)](https://bintray.com/shibme/maven/diction/_latestVersion)
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/shibme/diction.svg)](http://isitmaintained.com/project/shibme/diction "Percentage of issues still open")
 
-A java dictionary service based on RiTa WordNet library
+A java english dictionary library based on RiTa WordNet
 
 ### Maven Dependency for Consumers
 Add to your `pom.xml`

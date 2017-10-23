@@ -7,7 +7,7 @@
     <artifactId>diction</artifactId>
     <version>0.1.0</version>
     <name>Diction</name>
-    <description>A java dictionary service based on RiTa WordNet library</description>
+    <description>A java english dictionary library based on RiTa WordNet</description>
     <url>https://github.com/shibme/diction</url>
 
     <issueManagement>
@@ -56,7 +56,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.6.0</version>
+                <version>3.7.0</version>
                 <configuration>
                     <source>1.7</source>
                     <target>1.7</target>
@@ -104,7 +104,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
-                <version>2.6</version>
+                <version>3.1.0</version>
                 <configuration>
                     <finalName>${project.artifactId}-${project.version}</finalName>
                     <appendAssemblyId>false</appendAssemblyId>
@@ -130,7 +130,7 @@
             <plugin>
                 <groupId>de.jutzig</groupId>
                 <artifactId>github-release-plugin</artifactId>
-                <version>1.1.1</version>
+                <version>1.2.0</version>
                 <executions>
                     <execution>
                         <id>github-upload</id>
@@ -142,9 +142,7 @@
                         <configuration>
                             <overwriteArtifact>true</overwriteArtifact>
                             <releaseName>${project.artifactId}-${project.version}</releaseName>
-                            <description>Might require transitive dependencies.
-                                Please take a look into pom.xml if you plan to use it manually.
-                                It is recommended to use as maven dependency to avoid issues.
+                            <description>It is recommended to use as maven dependency rather than downloading the JAR.
                             </description>
                             <tag>${project.version}</tag>
                             <fileSets>
